@@ -4,6 +4,20 @@ QGG Hover Mic is a custom Codex desktop pet converted from QQPet QGG assets. It 
 
 QGG Hover Mic 是一个由 QQ 宠物 QGG 素材转换而来的 Codex 桌面宠物，hover 状态使用麦克风动作，并以 Codex skill 的形式打包，方便安装和分享。
 
+## Preview / 动画预览
+
+| State / 状态 | Screenshot / 截图 | Source / 来源 |
+| --- | --- | --- |
+| Idle / 待机 | <img src="assets/previews/idle.png" width="96" alt="Idle preview"> | `1020010241.swf` |
+| Running Right / 向右走 | <img src="assets/previews/running-right.png" width="96" alt="Running right preview"> | `1028020241.swf` |
+| Running Left / 向左走 | <img src="assets/previews/running-left.png" width="96" alt="Running left preview"> | `1028020241.swf` mirrored |
+| Waving / 招手 | <img src="assets/previews/waving.png" width="96" alt="Waving preview"> | `1023010221.swf` |
+| Hover Mic / hover 麦克风 | <img src="assets/previews/hover-mic.png" width="96" alt="Hover microphone preview"> | `1023010221.swf` |
+| Failed / 失败 | <img src="assets/previews/failed.png" width="96" alt="Failed preview"> | `1020000541.swf` |
+| Waiting Sleep / 等待睡觉 | <img src="assets/previews/waiting-sleep.png" width="96" alt="Waiting sleep preview"> | `1020041221.swf` |
+| Running Active / 运行中 | <img src="assets/previews/running-active.png" width="96" alt="Running active preview"> | `1020070521.swf` |
+| Review Book / 读书检查 | <img src="assets/previews/review-book.png" width="96" alt="Review book preview"> | `1020100221.swf` |
+
 ## Install / 安装
 
 Clone this repository into your Codex skills folder:
@@ -41,6 +55,7 @@ Then restart Codex or refresh the pet list, and select `QGG Hover Mic`.
 - `assets/qgg-hover-mic/pet.json`: pet metadata / 宠物配置
 - `assets/qgg-hover-mic/spritesheet.png`: pet animation sheet / 宠物动画图集
 - `assets/qgg-hover-mic/source-mapping.json`: source animation mapping / 源动画映射
+- `assets/previews/*.png`: README screenshots / README 预览截图
 
 ## Notes / 说明
 
