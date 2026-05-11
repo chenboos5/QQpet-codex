@@ -1,0 +1,83 @@
+[
+  {
+    "state": "idle",
+    "row": 0,
+    "source": "1020010241.swf",
+    "frames": 6,
+    "transform": null,
+    "scale": 1,
+    "trimToContent": true
+  },
+  {
+    "state": "running-right",
+    "row": 1,
+    "source": "1028020241.swf",
+    "frames": 8,
+    "transform": null,
+    "scale": 1,
+    "trimToContent": true
+  },
+  {
+    "state": "running-left",
+    "row": 2,
+    "source": "1028020241.swf",
+    "frames": 8,
+    "transform": "mirror-horizontal",
+    "scale": 1,
+    "trimToContent": true
+  },
+  {
+    "state": "waving",
+    "row": 3,
+    "source": "1023010221.swf",
+    "frames": 4,
+    "transform": null,
+    "scale": 1,
+    "trimToContent": true
+  },
+  {
+    "state": "jumping",
+    "row": 4,
+    "source": "1023010221.swf",
+    "frames": 5,
+    "transform": null,
+    "scale": 1,
+    "trimToContent": true
+  },
+  {
+    "state": "failed",
+    "row": 5,
+    "source": "1020000541.swf",
+    "frames": 8,
+    "transform": null,
+    "scale": 1,
+    "trimToContent": true
+  },
+  {
+    "state": "waiting",
+    "row": 6,
+    "source": "1020041221.swf",
+    "frames": 6,
+    "transform": null,
+    "scale": 1,
+    "trimToContent": true
+  },
+  {
+    "state": "running",
+    "row": 7,
+    "source": "1020070521.swf",
+    "frames": 6,
+    "transform": null,
+    "scale": 1,
+    "trimToContent": true
+  },
+  {
+    "state": "review",
+    "row": 8,
+    "source": "1020100221.swf",
+    "frames": 6,
+    "transform": null,
+    "scale": 1,
+    "trimToContent": true
+  }
+]
