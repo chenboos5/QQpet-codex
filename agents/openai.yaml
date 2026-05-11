@@ -1,8 +1,8 @@
 interface:
-  display_name: "QGG Hover Mic Pet"
-  short_description: "安装 QGG 麦克风 hover 版 Codex 宠物。"
+  display_name: "QQpet-codex"
+  short_description: "安装 QQpet-codex Codex 宠物。"
   brand_color: "#4F8A8B"
-  default_prompt: "Use $qgg-hover-mic-pet to install the bundled QGG Hover Mic Codex pet / 安装内置的 QGG 麦克风 hover 版 Codex 宠物。"
+  default_prompt: "Use $QQpet-codex to install the bundled QQpet-codex Codex pet / 安装内置的 QQpet-codex 宠物。"
 
 policy:
   allow_implicit_invocation: true
