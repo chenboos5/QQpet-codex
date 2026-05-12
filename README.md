@@ -1,22 +1,26 @@
 # QQpet-codex
 
-QQpet-codex is a custom Codex desktop pet converted from QQPet QGG assets. It includes a microphone hover animation and comes packaged as a Codex skill for easy installation.
+QQpet-codex is a custom Codex desktop pet converted from QQPet QGG assets. This version uses a larger motion hover animation, keeps the microphone animation as the waving state, and uses an instrument-checking animation for review.
 
-QQpet-codex 是一个由 QQ 宠物 QGG 素材转换而来的 Codex 桌面宠物，hover 状态使用麦克风动作，并以 Codex skill 的形式打包，方便安装和分享。
+QQpet-codex 是一个由 QQ 宠物 QGG 素材转换而来的 Codex 桌面宠物。当前版本把 hover 换成了动作更明显的动画，麦克风动作保留在 waving 状态，并把 review 换成了检查/操作仪器的动画。
 
 ## Preview / 动画预览
 
-| State / 状态 | Screenshot / 截图 | Source / 来源 |
-| --- | --- | --- |
-| Idle / 待机 | <img src="assets/previews/idle.png" width="96" alt="Idle preview"> | `1020010241.swf` |
-| Running Right / 向右走 | <img src="assets/previews/running-right.png" width="96" alt="Running right preview"> | `1028020241.swf` |
-| Running Left / 向左走 | <img src="assets/previews/running-left.png" width="96" alt="Running left preview"> | `1028020241.swf` mirrored |
-| Waving / 招手 | <img src="assets/previews/waving.png" width="96" alt="Waving preview"> | `1023010221.swf` |
-| Hover / hover 麦克风 | <img src="assets/previews/hover.png" width="96" alt="Hover preview"> | `1023010221.swf` |
-| Failed / 失败 | <img src="assets/previews/failed.png" width="96" alt="Failed preview"> | `1020000541.swf` |
-| Waiting Sleep / 等待睡觉 | <img src="assets/previews/waiting-sleep.png" width="96" alt="Waiting sleep preview"> | `1020041221.swf` |
-| Running Active / 运行中 | <img src="assets/previews/running-active.png" width="96" alt="Running active preview"> | `1020070521.swf` |
-| Review Book / 读书检查 | <img src="assets/previews/review-book.png" width="96" alt="Review book preview"> | `1020100221.swf` |
+The previews below are animated PNGs generated from the bundled spritesheet. If they appear static in a Markdown client, open the image or view the repository on GitHub.
+
+下面的预览图是从内置 spritesheet 生成的动态 PNG。如果某些 Markdown 客户端里看起来不动，可以打开图片或在 GitHub 页面查看。
+
+| State / 状态 | Trigger / 触发语义 | Animated Preview / 动态预览 | Source / 来源 |
+| --- | --- | --- | --- |
+| `idle` / 待机 | Default resting pose / 默认待机 | <img src="assets/previews/idle.png" width="112" alt="Idle animation preview"> | `1020010241.swf` |
+| `running-right` / 向右走 | Move right / 向右移动 | <img src="assets/previews/running-right.png" width="112" alt="Running right animation preview"> | `1028020241.swf` |
+| `running-left` / 向左走 | Move left / 向左移动 | <img src="assets/previews/running-left.png" width="112" alt="Running left animation preview"> | `1028020241.swf` mirrored |
+| `waving` / 招手 | Greeting fallback; microphone pose / 打招呼备用状态，麦克风动作 | <img src="assets/previews/waving.png" width="112" alt="Waving microphone animation preview"> | `1023010221.swf` |
+| `jumping` / hover | Codex hover interaction / 鼠标悬浮触发 | <img src="assets/previews/hover.png" width="112" alt="Hover animation preview"> | `1020090221.swf` |
+| `failed` / 失败 | Failed or interrupted state / 失败或中断状态 | <img src="assets/previews/failed.png" width="112" alt="Failed animation preview"> | `1020000541.swf` |
+| `waiting` / 等待 | Waiting or idle timeout / 等待或长时间空闲 | <img src="assets/previews/waiting-sleep.png" width="112" alt="Waiting sleep animation preview"> | `1020041221.swf` |
+| `running` / 运行中 | Active task state / 任务运行中 | <img src="assets/previews/running-active.png" width="112" alt="Running active animation preview"> | `1020070521.swf` |
+| `review` / reviewing | Review mode; checking instrument / review 状态，检查/操作仪器 | <img src="assets/previews/review-instrument.png" width="112" alt="Review instrument animation preview"> | `1029200331.swf` |
 
 ## Install / 安装
 
@@ -55,14 +59,18 @@ Then restart Codex or refresh the pet list, and select `QQpet-codex`.
 - `assets/QQpet-codex/pet.json`: pet metadata / 宠物配置
 - `assets/QQpet-codex/spritesheet.png`: pet animation sheet / 宠物动画图集
 - `assets/QQpet-codex/source-mapping.json`: source animation mapping / 源动画映射
-- `assets/previews/*.png`: README screenshots / README 预览截图
+- `assets/previews/*.png`: animated README previews / README 动态预览
 
 ## Notes / 说明
 
 - The installer copies bundled assets into your local Codex pets directory.
 - No SWF conversion is required during installation.
+- In this Codex desktop build, hover uses the `jumping` row, so the hover animation is mapped to `1020090221.swf`.
+- `waving` keeps the microphone animation, but it is a separate greeting/fallback state, not the hover interaction.
 - If `CODEX_HOME` is set, the installer uses `$CODEX_HOME/pets/QQpet-codex`; otherwise it uses `~/.codex/pets/QQpet-codex`.
 
 - 安装脚本会把内置资源复制到本机 Codex pets 目录。
 - 安装时不需要重新转换 SWF。
+- 在当前 Codex 桌面版本里，hover 实际走 `jumping` 行，所以 hover 动画映射到 `1020090221.swf`。
+- `waving` 仍然保留麦克风动画，但它是独立的招手/备用状态，不是 hover 交互。
 - 如果设置了 `CODEX_HOME`，会安装到 `$CODEX_HOME/pets/QQpet-codex`；否则安装到 `~/.codex/pets/QQpet-codex`。

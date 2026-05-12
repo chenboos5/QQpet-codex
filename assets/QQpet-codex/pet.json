@@ -1,6 +1,6 @@
 {
   "id": "QQpet-codex",
   "displayName": "QQpet-codex",
-  "description": "QQPet QGG custom Codex desktop pet.",
+  "description": "QQPet QGG custom Codex desktop pet with large-motion hover and instrument-checking review animations.",
   "spritesheetPath": "spritesheet.png"
 }

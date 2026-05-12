@@ -38,7 +38,7 @@
   {
     "state": "jumping",
     "row": 4,
-    "source": "1023010221.swf",
+    "source": "1020090221.swf",
     "frames": 5,
     "transform": null,
     "scale": 1,
@@ -74,10 +74,11 @@
   {
     "state": "review",
     "row": 8,
-    "source": "1020100221.swf",
-    "frames": 6,
+    "source": "1029200331.swf",
+    "frames": 8,
     "transform": null,
-    "scale": 1,
-    "trimToContent": true
+    "scale": 1.7037037037037037,
+    "trimToContent": true,
+    "targetContentHeight": 190
   }
 ]
