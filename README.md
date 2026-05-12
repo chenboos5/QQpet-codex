@@ -65,12 +65,8 @@ Then restart Codex or refresh the pet list, and select `QQpet-codex`.
 
 - The installer copies bundled assets into your local Codex pets directory.
 - No SWF conversion is required during installation.
-- In this Codex desktop build, hover uses the `jumping` row, so the hover animation is mapped to `1020090221.swf`.
-- `waving` keeps the microphone animation, but it is a separate greeting/fallback state, not the hover interaction.
 - If `CODEX_HOME` is set, the installer uses `$CODEX_HOME/pets/QQpet-codex`; otherwise it uses `~/.codex/pets/QQpet-codex`.
 
 - 安装脚本会把内置资源复制到本机 Codex pets 目录。
 - 安装时不需要重新转换 SWF。
-- 在当前 Codex 桌面版本里，hover 实际走 `jumping` 行，所以 hover 动画映射到 `1020090221.swf`。
-- `waving` 仍然保留麦克风动画，但它是独立的招手/备用状态，不是 hover 交互。
 - 如果设置了 `CODEX_HOME`，会安装到 `$CODEX_HOME/pets/QQpet-codex`；否则安装到 `~/.codex/pets/QQpet-codex`。
