@@ -60,6 +60,7 @@ Then restart Codex or refresh the pet list, and select `QQpet-codex`.
 - `assets/QQpet-codex/spritesheet.png`: pet animation sheet / 宠物动画图集
 - `assets/QQpet-codex/source-mapping.json`: source animation mapping / 源动画映射
 - `assets/previews/*.png`: animated README previews / README 动态预览
+- `BRANCH_README.md`: living notes for the current experimental branch / 当前实验分支的持续更新说明
 - `universal-pet/`: experimental cross-agent pet console / 跨 agent 通用宠物控制台实验
 - `docs/universal-agent-pet.md`: prototype notes, event schema, and current limits / 原型说明、事件格式和当前边界
 
