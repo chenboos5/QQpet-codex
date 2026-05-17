@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Added project agent notes and pull request template.
+
 ## 2026-05-12
 
 - Updated the hover animation to `1020090221.swf`.
