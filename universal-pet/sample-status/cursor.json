@@ -1,0 +1,6 @@
+{
+  "type": "permission_required",
+  "taskId": "cursor-demo",
+  "title": "Install dependency",
+  "action": "pnpm install"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "qqpet-universal-agent-pet",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "validate:pet": "node scripts/validate-pet-package.mjs ../assets/QQpet-codex"
+  }
+}

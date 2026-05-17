@@ -40,6 +40,10 @@ After installation, restart Codex or refresh the pet list, then select `QQpet-co
 
 The installer verifies the bundled files before copying them.
 
+## Universal Prototype
+
+This repository also contains an experimental cross-agent prototype in `universal-pet/`. It is not installed into Codex by this skill. Use it from a local checkout when you want to preview QQpet-codex as a generic Codex / Claude Code / Cursor / OpenCode status companion.
+
 ## 中文
 
 这个 skill 会把内置的 QQpet-codex 桌面宠物安装到：
@@ -74,3 +78,7 @@ bash scripts/install_QQpet_codex.sh
 - 资源文件：`pet.json`、`spritesheet.png`、`source-mapping.json`
 
 安装脚本会先检查内置资源是否齐全，再复制到 Codex 的 pets 目录。
+
+### 通用原型
+
+这个仓库也包含 `universal-pet/` 跨 agent 实验原型。它不会通过本 skill 安装到 Codex；如果要预览 QQpet-codex 作为 Codex / Claude Code / Cursor / OpenCode 的通用状态宠物，请在本地仓库中单独运行。

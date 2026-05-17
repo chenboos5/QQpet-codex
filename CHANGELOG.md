@@ -1,8 +1,15 @@
 # Changelog
 
-## Unreleased
+## v0.1.0 - 2026-05-17
 
 - Added project agent notes and pull request template.
+- Added `universal-pet/`, a local prototype for using QQpet-codex as a cross-agent coding pet.
+- Added a shared state machine that normalizes Codex, Claude Code, Cursor, OpenCode, and generic agent events into pet states.
+- Added a file-status adapter, sample multi-agent config, sample status files, and a browser console using the existing QQpet spritesheet.
+- Added a deeper Codex session adapter that reads local rollout JSONL and detects active calls, completion, and `require_escalated` approval requests.
+- Added a Claude Code hook writer and setup docs for routing Claude Code events into QQpet.
+- Added configurable pet asset packages so users can swap in custom pet spritesheets and animation mappings without changing agent adapters.
+- Documented current prototype limits in `docs/universal-agent-pet.md`.
 
 ## 2026-05-12
 

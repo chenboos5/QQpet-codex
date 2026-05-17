@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QQpet Universal Agent Pet</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="pet-stage" aria-label="Universal agent pet status">
+        <div class="pet-wrap">
+          <div id="sprite" class="sprite" aria-hidden="true"></div>
+          <div id="bubble" class="bubble" role="status">Loading agent state...</div>
+        </div>
+      </section>
+
+      <section class="agent-panel" aria-label="Agent tasks">
+        <header class="panel-header">
+          <h1>QQpet Agent Console</h1>
+          <span id="summary" class="summary">Waiting for status</span>
+        </header>
+        <div id="agent-list" class="agent-list"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

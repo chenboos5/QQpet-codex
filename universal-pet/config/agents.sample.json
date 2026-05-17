@@ -1,0 +1,34 @@
+{
+  "pet": {
+    "id": "QQpet-codex",
+    "displayName": "QQpet-codex",
+    "assetDir": "../../assets/QQpet-codex",
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "columns": 8,
+    "rows": 9,
+    "scale": 1.35
+  },
+  "agents": [
+    {
+      "id": "codex",
+      "displayName": "Codex",
+      "adapter": "codex-session"
+    },
+    {
+      "id": "claude-code",
+      "displayName": "Claude Code",
+      "statusFile": "~/.qqpet-agent/status/claude-code.json"
+    },
+    {
+      "id": "cursor",
+      "displayName": "Cursor",
+      "statusFile": "../sample-status/cursor.json"
+    },
+    {
+      "id": "opencode",
+      "displayName": "OpenCode",
+      "statusFile": "../sample-status/opencode.json"
+    }
+  ]
+}

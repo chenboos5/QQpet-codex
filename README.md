@@ -60,6 +60,88 @@ Then restart Codex or refresh the pet list, and select `QQpet-codex`.
 - `assets/QQpet-codex/spritesheet.png`: pet animation sheet / 宠物动画图集
 - `assets/QQpet-codex/source-mapping.json`: source animation mapping / 源动画映射
 - `assets/previews/*.png`: animated README previews / README 动态预览
+- `universal-pet/`: experimental cross-agent pet console / 跨 agent 通用宠物控制台实验
+- `docs/universal-agent-pet.md`: prototype notes, event schema, and current limits / 原型说明、事件格式和当前边界
+
+## Universal Agent Pet Prototype / 跨 Agent 通用宠物原型
+
+This branch adds an experimental local console that lets QQpet-codex react to multiple coding agents through a shared status schema. It keeps the existing Codex pet package unchanged and adds a portable adapter layer for task progress and authorization alerts.
+
+这个分支新增了一个本地原型控制台，让 QQpet-codex 可以通过统一的状态格式响应多个 coding agent。它不会破坏现有 Codex pet 资源包，而是在外层增加任务进度和授权提醒的通用适配层。
+
+Run the prototype:
+
+运行原型：
+
+```bash
+cd universal-pet
+npm test
+npm start
+```
+
+Open:
+
+打开：
+
+```text
+http://localhost:8787
+```
+
+Codex now uses a deeper local session adapter that reads `${CODEX_HOME:-~/.codex}/sessions` and detects active tool calls, task completion, and `require_escalated` approval requests. Other agents can still use the local JSON status-file adapter.
+
+Codex 现在会走更深一层的本地 session adapter，读取 `${CODEX_HOME:-~/.codex}/sessions`，识别工具调用、任务完成和 `require_escalated` 授权请求。其他 agent 仍然可以先用本地 JSON 状态文件适配。
+
+Any non-Codex agent that can write this JSON shape can drive the pet:
+
+任何能写入这个 JSON 格式的非 Codex agent 都可以驱动宠物：
+
+```json
+{
+  "source": "codex",
+  "type": "tool_call",
+  "taskId": "task-1",
+  "title": "Update README",
+  "progress": 42,
+  "detail": "running tests"
+}
+```
+
+See `docs/universal-agent-pet.md` for supported phases and current limits.
+
+支持的状态和当前限制见 `docs/universal-agent-pet.md`。
+
+Claude Code can be connected through official hooks. The bundled hook writer is:
+
+Claude Code 可以通过官方 hooks 接入。内置 hook 写入脚本是：
+
+```text
+universal-pet/scripts/claude-hook-status.mjs
+```
+
+It writes to:
+
+它会写入：
+
+```text
+~/.qqpet-agent/status/claude-code.json
+```
+
+Full Claude setup is in `docs/universal-agent-pet.md`.
+
+完整 Claude 配置见 `docs/universal-agent-pet.md`。
+
+The universal console can also load a custom pet asset package. Put `pet.json`, a spritesheet, and optional `source-mapping.json` in any local folder, then point `pet.assetDir` in `universal-pet/config/agents.sample.json` or your own config at that folder.
+
+通用控制台也可以加载用户自定义宠物素材包。把 `pet.json`、spritesheet 和可选的 `source-mapping.json` 放进任意本地目录，然后在 `universal-pet/config/agents.sample.json` 或自己的配置里把 `pet.assetDir` 指向这个目录。
+
+Validate a package:
+
+校验素材包：
+
+```bash
+cd universal-pet
+node scripts/validate-pet-package.mjs ../assets/QQpet-codex
+```
 
 ## Notes / 说明
 
