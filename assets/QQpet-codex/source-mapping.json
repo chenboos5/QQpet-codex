@@ -9,20 +9,20 @@
     "trimToContent": true
   },
   {
-    "state": "running-right",
+    "state": "running-left",
     "row": 1,
     "source": "1028020241.swf",
     "frames": 8,
-    "transform": null,
+    "transform": "mirror-horizontal",
     "scale": 1,
     "trimToContent": true
   },
   {
-    "state": "running-left",
+    "state": "running-right",
     "row": 2,
     "source": "1028020241.swf",
     "frames": 8,
-    "transform": "mirror-horizontal",
+    "transform": null,
     "scale": 1,
     "trimToContent": true
   },

@@ -10,17 +10,17 @@ The previews below are animated PNGs generated from the bundled spritesheet. If 
 
 下面的预览图是从内置 spritesheet 生成的动态 PNG。如果某些 Markdown 客户端里看起来不动，可以打开图片或在 GitHub 页面查看。
 
-| State / 状态 | Trigger / 触发语义 | Animated Preview / 动态预览 | Source / 来源 |
-| --- | --- | --- | --- |
-| `idle` / 待机 | Default resting pose / 默认待机 | <img src="assets/previews/idle.png" width="112" alt="Idle animation preview"> | `1020010241.swf` |
-| `running-right` / 向右走 | Move right / 向右移动 | <img src="assets/previews/running-right.png" width="112" alt="Running right animation preview"> | `1028020241.swf` |
-| `running-left` / 向左走 | Move left / 向左移动 | <img src="assets/previews/running-left.png" width="112" alt="Running left animation preview"> | `1028020241.swf` mirrored |
-| `waving` / 招手 | Greeting fallback; microphone pose / 打招呼备用状态，麦克风动作 | <img src="assets/previews/waving.png" width="112" alt="Waving microphone animation preview"> | `1023010221.swf` |
-| `jumping` / hover | Codex hover interaction / 鼠标悬浮触发 | <img src="assets/previews/hover.png" width="112" alt="Hover animation preview"> | `1020090221.swf` |
-| `failed` / 失败 | Failed or interrupted state / 失败或中断状态 | <img src="assets/previews/failed.png" width="112" alt="Failed animation preview"> | `1020000541.swf` |
-| `waiting` / 等待 | Waiting or idle timeout / 等待或长时间空闲 | <img src="assets/previews/waiting-sleep.png" width="112" alt="Waiting sleep animation preview"> | `1020041221.swf` |
-| `running` / 运行中 | Active task state / 任务运行中 | <img src="assets/previews/running-active.png" width="112" alt="Running active animation preview"> | `1020070521.swf` |
-| `review` / reviewing | Review mode; checking instrument / review 状态，检查/操作仪器 | <img src="assets/previews/review-instrument.png" width="112" alt="Review instrument animation preview"> | `1029200331.swf` |
+| State / 状态 | Spritesheet row / 图集行 | Trigger / 触发语义 | Animated Preview / 动态预览 | Source / 来源 |
+| --- | --- | --- | --- | --- |
+| `idle` / 待机 | 0 | Default resting pose / 默认待机 | <img src="assets/previews/idle.png" width="112" alt="Idle animation preview"> | `1020010241.swf` |
+| `running-left` / 向左走 | 1 | Move left / 向左移动 | <img src="assets/previews/running-left.png" width="112" alt="Running left animation preview"> | `1028020241.swf` mirrored |
+| `running-right` / 向右走 | 2 | Move right / 向右移动 | <img src="assets/previews/running-right.png" width="112" alt="Running right animation preview"> | `1028020241.swf` |
+| `waving` / 招手 | 3 | Greeting fallback; microphone pose / 打招呼备用状态，麦克风动作 | <img src="assets/previews/waving.png" width="112" alt="Waving microphone animation preview"> | `1023010221.swf` |
+| `jumping` / hover | 4 | Codex hover interaction / 鼠标悬浮触发 | <img src="assets/previews/hover.png" width="112" alt="Hover animation preview"> | `1020090221.swf` |
+| `failed` / 失败 | 5 | Failed or interrupted state / 失败或中断状态 | <img src="assets/previews/failed.png" width="112" alt="Failed animation preview"> | `1020000541.swf` |
+| `waiting` / 等待 | 6 | Waiting or idle timeout / 等待或长时间空闲 | <img src="assets/previews/waiting-sleep.png" width="112" alt="Waiting sleep animation preview"> | `1020041221.swf` |
+| `running` / 运行中 | 7 | Active task state / 任务运行中 | <img src="assets/previews/running-active.png" width="112" alt="Running active animation preview"> | `1020070521.swf` |
+| `review` / reviewing | 8 | Review mode; checking instrument / review 状态，检查/操作仪器 | <img src="assets/previews/review-instrument.png" width="112" alt="Review instrument animation preview"> | `1029200331.swf` |
 
 ## Install / 安装
 

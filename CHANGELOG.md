@@ -4,6 +4,11 @@
 
 - Added project agent notes and pull request template.
 
+## 2026-07-11
+
+- Fixed left/right movement directions by swapping the two running animation rows in the spritesheet.
+- Updated the source mapping and README animation table with Codex's actual row order.
+
 ## 2026-05-12
 
 - Updated the hover animation to `1020090221.swf`.
