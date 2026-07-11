@@ -1,6 +1,6 @@
 ---
 name: QQpet-codex
-description: Install the bundled QQpet-codex desktop pet, a QQPet QGG conversion for Codex with a large-motion hover animation, microphone waving state, and instrument-checking review state. Use when the user wants to install, restore, or share this custom Codex pet. 中文：安装、恢复或分享 QQpet-codex 这款 Codex 桌面宠物。
+description: Install the bundled QQpet-codex desktop pet, a QQPet QGG conversion for Codex with corrected directional running, a large-motion hover animation, microphone waving state, and instrument-checking review state. Use when the user wants to install, restore, or share this custom Codex pet. 中文：安装、恢复或分享 QQpet-codex 这款 Codex 桌面宠物。
 ---
 
 # QQpet-codex

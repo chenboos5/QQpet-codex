@@ -1,8 +1,8 @@
 # QQpet-codex
 
-QQpet-codex is a custom Codex desktop pet converted from QQPet QGG assets. This version uses a larger motion hover animation, keeps the microphone animation as the waving state, and uses an instrument-checking animation for review.
+QQpet-codex is a custom Codex desktop pet converted from QQPet QGG assets. This version corrects left/right running directions, uses a larger motion hover animation, keeps the microphone animation as the waving state, and uses an instrument-checking animation for review.
 
-QQpet-codex 是一个由 QQ 宠物 QGG 素材转换而来的 Codex 桌面宠物。当前版本把 hover 换成了动作更明显的动画，麦克风动作保留在 waving 状态，并把 review 换成了检查/操作仪器的动画。
+QQpet-codex 是一个由 QQ 宠物 QGG 素材转换而来的 Codex 桌面宠物。当前版本已修正左右走路方向，把 hover 换成了动作更明显的动画，麦克风动作保留在 waving 状态，并把 review 换成了检查/操作仪器的动画。
 
 ## Preview / 动画预览
 
