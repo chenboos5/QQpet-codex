@@ -1,3 +1,5 @@
+
+
 # QQpet-codex
 
 QQpet-codex is a custom Codex desktop pet converted from QQPet QGG assets. This version corrects left/right running directions, uses a larger motion hover animation, keeps the microphone animation as the waving state, and uses an instrument-checking animation for review.
@@ -45,7 +47,7 @@ The pet will be installed to:
 宠物会安装到：
 
 ```bash
-~/.codex/pets/QQpet-codex
+${CODEX_HOME:-$HOME/.codex}/pets/QQpet-codex
 ```
 
 Then restart Codex or refresh the pet list, and select `QQpet-codex`.
